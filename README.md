@@ -22,7 +22,7 @@ For input sizes of 50,000, and 75,000 create 3 arrays:
 	2.	Reverse ordered	
 	3.	Randomly ordered 
   
-# Radix Sort
+## Radix Sort
 
 Use the Radix sort algorithm to sort the following strings.
 
