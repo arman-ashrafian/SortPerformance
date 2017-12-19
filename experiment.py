@@ -97,10 +97,75 @@ def output_random_ordered():
 
 	print('\n')
 
+def output_ordered_mergeheap():
+	already_ordered_1 = [x for x in range(0,50000)]
+	already_ordered_2 = [x for x in range(0,75000)]
+
+	print("Already Ordered")
+	print(already_ordered_1[0:5])
+	print("%-20s %-20s %-20s" % ("ALGORITHM", "50,000", "75,000"))
+
+	m1 = merge_sort(list(already_ordered_1))
+	m2 = merge_sort(list(already_ordered_2))
+
+	print("%-20s %-20d %-20d" % ("Merge Sort", m1, m2))
+
+	h1 = heap_sort(list(already_ordered_1))
+	h2 = heap_sort(list(already_ordered_2))
+
+	print("%-20s %-20d %-20d" % ("Heap Sort", h1, h2))
+	print("\n")
+
+
+def output_reversed_mergeheap():
+	reverse_ordered_1 = [x for x in range(49999,-1, -1)]
+	reverse_ordered_2 = [x for x in range(74999,-1, -1)]
+
+	print("Reverse Ordered")
+	print(reverse_ordered_1[0:5])
+	print("%-20s %-20s %-20s" % ("ALGORITHM", "50,000", "75,000"))
+
+	m1 = merge_sort(list(reverse_ordered_1))
+	m2 = merge_sort(list(reverse_ordered_1))
+
+	print("%-20s %-20d %-20d" % ("Merge Sort", m1, m2))
+
+	h1 = heap_sort(list(reverse_ordered_1))
+	h2 = heap_sort(list(reverse_ordered_1))
+
+	print("%-20s %-20d %-20d" % ("Heap Sort", h1, h2))
+	print("\n")
+
+def output_random_mergeheap():
+	random.seed(time.time())
+	already_ordered = [x for x in range(0,75000)]
+
+	# create random ordered list
+	random_ordered_1 = random.sample(already_ordered, 50000)
+	random_ordered_2 = random.sample(already_ordered, 75000)
+
+	print("Random Ordered")
+	print(random_ordered_1[0:5])
+	print("%-20s %-20s %-20s" % ("ALGORITHM", "50,000", "75,000"))
+
+	m1 = merge_sort(list(random_ordered_1))
+	m2 = merge_sort(list(random_ordered_2))
+
+	print("%-20s %-20d %-20d" % ("Merge Sort", m1, m2))
+
+	h1 = heap_sort(list(random_ordered_1))
+	h2 = heap_sort(list(random_ordered_2))
+
+	print("%-20s %-20d %-20d" % ("Heap Sort", h1, h2))
+	print("\n")
+
 
 def main():
-	output_already_ordered()
-	output_reverse_ordered()
-	output_random_ordered()
+	# output_already_ordered()
+	# output_reverse_ordered()
+	# output_random_ordered()
+	output_ordered_mergeheap()
+	output_reversed_mergeheap()
+	output_random_mergeheap()
 
 main()

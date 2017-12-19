@@ -1,7 +1,7 @@
 Arman Ashrafian
 CS 1D Extra Credit
 
-Part A: Quick Sort Performance
+Part 1: Quick Sort Performance
 -------------------------------
 Already Ordered
 [0, 1, 2, 3, 4]
@@ -26,3 +26,24 @@ SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
 10000                361460               396643               390306
 50000                2343692              2373143              1808258
 
+Part 2: Merge Sort & Heap Sort Performace
+-----------------------------------------
+Already Ordered
+[0, 1, 2, 3, 4]
+ALGORITHM            50,000               75,000
+Merge Sort           4867901              7554157
+Heap Sort            6116197              9521723
+
+
+Reverse Ordered
+[49999, 49998, 49997, 49996, 49995]
+ALGORITHM            50,000               75,000
+Merge Sort           4945661              4945661
+Heap Sort            5473725              5473725
+
+
+Random Ordered
+[64753, 59157, 60871, 61575, 21706]
+ALGORITHM            50,000               75,000
+Merge Sort           6210569              9660125
+Heap Sort            5802568              9042035
