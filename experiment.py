@@ -159,13 +159,24 @@ def output_random_mergeheap():
 	print("%-20s %-20d %-20d" % ("Heap Sort", h1, h2))
 	print("\n")
 
+def output_radix_sort():
+	arr = ['acdes', 'asdsd', 'ksjtr', 'kerpt', 'absqa',
+	 'zabaa', 'rkdsb', 'qqqqq', 'kdfaa', 'zedsd']
+
+	sorted_array = radix_sort_string(arr, 0)
+
+	print("Sorted Array")
+	for s in sorted_array:
+		print(s)
+
 
 def main():
 	# output_already_ordered()
 	# output_reverse_ordered()
 	# output_random_ordered()
-	output_ordered_mergeheap()
-	output_reversed_mergeheap()
-	output_random_mergeheap()
+	# output_ordered_mergeheap()
+	# output_reversed_mergeheap()
+	# output_random_mergeheap()
+	output_radix_sort()
 
 main()

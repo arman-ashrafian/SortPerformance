@@ -2,13 +2,11 @@ from sort import *
 import random
 
 def main():
-	rand_list = [random.randint(0,5000) for x in range(5000)]
 
-	stats = quick_sort(rand_list, 0, 4999, partition3)
+	done_bucket = radix_sort_string(arr, 0)
 
-	for x in rand_list: print(x)
-
-	print(stats)
+	print("\n")
+	for x in done_bucket: print(x)
 
 if __name__ == '__main__':
 	main()

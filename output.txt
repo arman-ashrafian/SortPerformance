@@ -47,3 +47,45 @@ Random Ordered
 ALGORITHM            50,000               75,000
 Merge Sort           6210569              9660125
 Heap Sort            5802568              9042035
+
+Part 3: Radix Sort
+-------------------
+Pass 1
+acdes
+asdsd
+absqa
+ksjtr
+kerpt
+kdfaa
+qqqqq
+rkdsb
+zabaa
+zedsd
+
+Pass 2
+absqa
+acdes
+asdsd
+
+Pass 3
+kdfaa
+kerpt
+ksjtr
+
+Pass 4
+zabaa
+zedsd
+
+Pass 5
+Sorted Array
+------------
+absqa
+acdes
+asdsd
+kdfaa
+kerpt
+ksjtr
+qqqqq
+rkdsb
+zabaa
+zedsd

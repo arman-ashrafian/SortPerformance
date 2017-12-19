@@ -207,3 +207,28 @@ def heap_sort(arr):
         counter += heapify(arr, i, 0)
 
     return counter
+
+def radix_sort_string(arr, i):
+    # base case
+    if len(arr) <= 1:
+        return arr 
+
+    # divide by length then lex order
+    done_bucket = []
+    buckets = [ [] for x in range(27) ] # one bucket for each letter
+
+    for s in arr:
+        if i >= len(s):
+            done_bucket.append(s)
+        else:
+            buckets[ ord(s[i]) - ord('a') ].append(s)
+            
+    for x in (done_bucket + [ b for blist in buckets for b in blist ]):
+        print(x)
+
+    print("\n")
+    # recursively sort buckets
+    buckets = [ radix_sort_string(b, i + 1) for b in buckets ]
+
+    # chain all buckets together
+    return done_bucket + [ b for blist in buckets for b in blist ]
