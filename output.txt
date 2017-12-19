@@ -20,7 +20,7 @@ SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
 
 
 Random Ordered
-[1, 4, 15, 19, 23]
+[4260, 3019, 1390, 4530, 3713]
 SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
 5000                 86762                86658                87412
 10000                173368               173082               174148
