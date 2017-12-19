@@ -1,0 +1,27 @@
+Arman Ashrafian
+CS 1D Extra Credit
+
+Part A: Quick Sort Performance
+-------------------------------
+Already Ordered
+[0, 1, 2, 3, 4]
+SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
+5000                 129974               86502                76752
+10000                259974               173160               153504
+50000                1299974              865644               851942
+
+
+Reverse Ordered
+[4999, 4998, 4997, 4996, 4995]
+SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
+5000                 129974               86684                91000
+10000                259974               173680               182442
+50000                1299974              864916               924508
+
+
+Random Ordered
+[1, 4, 15, 19, 23]
+SIZE(N)              FIRST PIVOT          RANDOM PIVOT         MIDDLE PIVOT
+5000                 86762                86658                87412
+10000                173368               173082               174148
+50000                865514               868010               851942
