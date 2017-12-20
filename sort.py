@@ -228,11 +228,7 @@ def radix_sort_string(arr, i):
             done_bucket.append(s)
         else:
             buckets[ ord(s[i]) - ord('a') ].append(s)
-            
-    for x in (done_bucket + [ b for blist in buckets for b in blist ]):
-        print(x)
 
-    print("\n")
     # recursively sort buckets
     buckets = [ radix_sort_string(b, i + 1) for b in buckets ]
 

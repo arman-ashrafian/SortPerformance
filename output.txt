@@ -50,33 +50,79 @@ Heap Sort            5802568              9042035
 
 Part 3: Radix Sort
 -------------------
-Pass 1
+Original List:
 acdes
-asdsd
-absqa
+asdsd 
 ksjtr
 kerpt
+absqa
+zabaa
+rkdsb
+qqqqq
 kdfaa
+zedsd
+
+Pass 1:
+absqa
+zabaa
+kdfaa
+rkdsb
+asdsd
+zedsd
+qqqqq
+ksjtr
+acdes
+kerpt
+
+Pass 2:
+zabaa
+kdfaa
+acdes
+kerpt
+absqa
+qqqqq
+rkdsb
+asdsd
+zedsd
+ksjtr
+
+Pass 3:
+zabaa
+acdes
+rkdsb
+asdsd
+zedsd
+kdfaa
+ksjtr
+qqqqq
+kerpt
+absqa
+
+Pass 4:
+zabaa
+absqa
+acdes
+kdfaa
+zedsd
+kerpt
+rkdsb
+qqqqq
+asdsd
+ksjtr
+
+Pass 5:
+absqa
+acdes
+asdsd
+kdfaa
+kerpt
+ksjtr
 qqqqq
 rkdsb
 zabaa
 zedsd
 
-Pass 2
-absqa
-acdes
-asdsd
 
-Pass 3
-kdfaa
-kerpt
-ksjtr
-
-Pass 4
-zabaa
-zedsd
-
-Pass 5
 Sorted Array
 ------------
 absqa
