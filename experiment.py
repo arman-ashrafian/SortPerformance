@@ -1,6 +1,8 @@
 # Arman Ashrafian
 # CS 1D Extra Credit Assignment
 
+# This file runs the experiments and displays the results
+
 import random
 import time
 from sort import *

@@ -1,6 +1,12 @@
 # Arman Ashrafian
 # Sorting Algorithms
 
+# This file implements the following sorts:
+# - quick sort
+# - merge sort
+# - heap sort
+# - radix sort (strings)
+
 import random
 
 # Function to do Quick sort
